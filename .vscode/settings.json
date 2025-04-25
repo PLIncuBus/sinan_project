@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "imu.h": "c",
+        "main.h": "c",
+        "vofa.h": "c",
+        "uwb.h": "c"
+    }
+}

@@ -1,0 +1,50 @@
+sinan_project\ins_1.o: ..\User\1-APL(Application Layer)\src\INS.cpp
+sinan_project\ins_1.o: ..\User\1-APL(Application Layer)\inc\INS.h
+sinan_project\ins_1.o: ../Core/Inc/main.h
+sinan_project\ins_1.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h
+sinan_project\ins_1.o: ../Core/Inc/stm32h7xx_hal_conf.h
+sinan_project\ins_1.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h
+sinan_project\ins_1.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h
+sinan_project\ins_1.o: ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h
+sinan_project\ins_1.o: ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h743xx.h
+sinan_project\ins_1.o: ../Drivers/CMSIS/Include/core_cm7.h
+sinan_project\ins_1.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+sinan_project\ins_1.o: ../Drivers/CMSIS/Include/cmsis_version.h
+sinan_project\ins_1.o: ../Drivers/CMSIS/Include/cmsis_compiler.h
+sinan_project\ins_1.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
+sinan_project\ins_1.o: ../Drivers/CMSIS/Include/mpu_armv7.h
+sinan_project\ins_1.o: ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/system_stm32h7xx.h
+sinan_project\ins_1.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h
+sinan_project\ins_1.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
+sinan_project\ins_1.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
+sinan_project\ins_1.o: D:\Keil5\ARM\ARMCC\Bin\..\include\math.h
+sinan_project\ins_1.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc_ex.h
+sinan_project\ins_1.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_gpio.h
+sinan_project\ins_1.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_gpio_ex.h
+sinan_project\ins_1.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma.h
+sinan_project\ins_1.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma_ex.h
+sinan_project\ins_1.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h
+sinan_project\ins_1.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h
+sinan_project\ins_1.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h
+sinan_project\ins_1.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h
+sinan_project\ins_1.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash_ex.h
+sinan_project\ins_1.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_hsem.h
+sinan_project\ins_1.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c.h
+sinan_project\ins_1.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c_ex.h
+sinan_project\ins_1.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr.h
+sinan_project\ins_1.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h
+sinan_project\ins_1.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_spi.h
+sinan_project\ins_1.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_spi_ex.h
+sinan_project\ins_1.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h
+sinan_project\ins_1.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h
+sinan_project\ins_1.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h
+sinan_project\ins_1.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h
+sinan_project\ins_1.o: ../Core/Inc/gpio.h
+sinan_project\ins_1.o: ../Core/Inc/main.h
+sinan_project\ins_1.o: ../Core/Inc/i2c.h
+sinan_project\ins_1.o: ../Core/Inc/spi.h
+sinan_project\ins_1.o: ../Core/Inc/usart.h
+sinan_project\ins_1.o: ..\User\3-HDL(Hardwware Driver Layer)\inc\imu.h
+sinan_project\ins_1.o: D:\Keil5\ARM\ARMCC\Bin\..\include\string.h
+sinan_project\ins_1.o: ..\User\3-HDL(Hardwware Driver Layer)\inc\OLED.h
+sinan_project\ins_1.o: ..\User\1-APL(Application Layer)\inc\INS.h
