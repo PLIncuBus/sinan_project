@@ -3,7 +3,7 @@
 <title>Static Call Graph - [sinan_project\sinan_project.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image sinan_project\sinan_project.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Tue Apr 22 23:57:38 2025
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Fri Apr 25 21:38:11 2025
 <BR><P>
 <H3>Maximum Stack Usage =        564 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -201,8 +201,8 @@ Function Pointers
 Global Symbols
 </H3>
 <P><STRONG><a name="[a7]"></a>__main</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, __main.o(!!!main))
-<BR><BR>[Calls]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry
-<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+<BR><BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry
 </UL>
 
 <P><STRONG><a name="[a9]"></a>__scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter))
@@ -942,11 +942,11 @@ Global Symbols
 <LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_OscConfig
 <LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_ClockConfig
 <LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_PWREx_ConfigSupply
+<LI><a href="#[12d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_WaitOnFlagUntilTimeout
+<LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_CheckIdleState
 <LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;[local to stm32h7xx_hal_rcc_ex_c]::RCCEx_PLL3_Config(RCC_PLL3InitTypeDef*, unsigned)
 <LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;[local to stm32h7xx_hal_rcc_ex_c]::RCCEx_PLL2_Config(RCC_PLL2InitTypeDef*, unsigned)
 <LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_DMA_Abort
-<LI><a href="#[12d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_WaitOnFlagUntilTimeout
-<LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_CheckIdleState
 </UL>
 
 <P><STRONG><a name="[11d]"></a>HAL_I2CEx_ConfigAnalogFilter</STRONG> (Thumb, 86 bytes, Stack size 0 bytes, stm32h7xx_hal_i2c_ex.o(i.HAL_I2CEx_ConfigAnalogFilter))
@@ -1318,15 +1318,15 @@ Global Symbols
 <P><STRONG><a name="[fe]"></a>HAL_UART_IRQHandler</STRONG> (Thumb, 880 bytes, Stack size 24 bytes, stm32h7xx_hal_uart.o(i.HAL_UART_IRQHandler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 132<LI>Call Chain = HAL_UART_IRQHandler &rArr; HAL_UARTEx_RxEventCallback &rArr; HAL_UARTEx_ReceiveToIdle_DMA &rArr; UART_Start_Receive_DMA &rArr; HAL_DMA_Start_IT &rArr; [local to stm32h7xx_hal_dma_c]::DMA_SetConfig(__DMA_HandleTypeDef*, unsigned, unsigned, unsigned)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_DMA_Abort_IT
-<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_DMA_Abort
-<LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;[local to stm32h7xx_hal_uart_c]::UART_EndRxTransfer(__UART_HandleTypeDef*)
-<LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_ErrorCallback
+<BR>[Calls]<UL><LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_ErrorCallback
 <LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UARTEx_RxEventCallback
 <LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_TxCpltCallback
 <LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UARTEx_WakeupCallback
 <LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UARTEx_TxFifoEmptyCallback
 <LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UARTEx_RxFifoFullCallback
+<LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_DMA_Abort_IT
+<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_DMA_Abort
+<LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;[local to stm32h7xx_hal_uart_c]::UART_EndRxTransfer(__UART_HandleTypeDef*)
 </UL>
 <BR>[Called By]<UL><LI><a href="#[34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART2_IRQHandler
 <LI><a href="#[33]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART1_IRQHandler
@@ -1605,8 +1605,8 @@ Global Symbols
 <P><STRONG><a name="[109]"></a>UART_CheckIdleState</STRONG> (Thumb, 172 bytes, Stack size 32 bytes, stm32h7xx_hal_uart.o(i.UART_CheckIdleState))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = UART_CheckIdleState &rArr; UART_WaitOnFlagUntilTimeout &rArr; [local to stm32h7xx_hal_uart_c]::UART_EndRxTransfer(__UART_HandleTypeDef*)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GetTick
-<LI><a href="#[12d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_WaitOnFlagUntilTimeout
+<BR>[Calls]<UL><LI><a href="#[12d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_WaitOnFlagUntilTimeout
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GetTick
 </UL>
 <BR>[Called By]<UL><LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Init
 </UL>
@@ -1757,8 +1757,8 @@ Global Symbols
 <P><STRONG><a name="[115]"></a>vector3f::cross(Matrixf&lang;(int)3, (int)3&rang;, Matrixf&lang;(int)3, (int)1&rang;)</STRONG> (Thumb, 42 bytes, Stack size 16 bytes, matrix.o(i._ZN8vector3f5crossE7MatrixfILi3ELi3EES0_ILi3ELi1EE))
 <BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = vector3f::cross(Matrixf&lang;(int)3, (int)3&rang;, Matrixf&lang;(int)3, (int)1&rang;) &rArr; arm_mat_mult_f32
 </UL>
-<BR>[Calls]<UL><LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;arm_mat_mult_f32
-<LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;arm_mat_init_f32
+<BR>[Calls]<UL><LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;arm_mat_init_f32
+<LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;arm_mat_mult_f32
 </UL>
 <BR>[Called By]<UL><LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;INS_region_cal
 </UL>
@@ -1927,9 +1927,9 @@ Local Symbols
 <P><STRONG><a name="[9e]"></a>[local to stm32h7xx_hal_uart_c]::UART_DMAError(__DMA_HandleTypeDef*)</STRONG> (Thumb, 80 bytes, Stack size 16 bytes, stm32h7xx_hal_uart.o(i._ZN42_INTERNAL_20_stm32h7xx_hal_uart_c_574fddf513UART_DMAErrorEP19__DMA_HandleTypeDef))
 <BR><BR>[Stack]<UL><LI>Max Depth = 116<LI>Call Chain = [local to stm32h7xx_hal_uart_c]::UART_DMAError(__DMA_HandleTypeDef*) &rArr; HAL_UART_ErrorCallback &rArr; HAL_UARTEx_ReceiveToIdle_DMA &rArr; UART_Start_Receive_DMA &rArr; HAL_DMA_Start_IT &rArr; [local to stm32h7xx_hal_dma_c]::DMA_SetConfig(__DMA_HandleTypeDef*, unsigned, unsigned, unsigned)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[135]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;[local to stm32h7xx_hal_uart_c]::UART_EndTxTransfer(__UART_HandleTypeDef*)
+<BR>[Calls]<UL><LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_ErrorCallback
+<LI><a href="#[135]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;[local to stm32h7xx_hal_uart_c]::UART_EndTxTransfer(__UART_HandleTypeDef*)
 <LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;[local to stm32h7xx_hal_uart_c]::UART_EndRxTransfer(__UART_HandleTypeDef*)
-<LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_ErrorCallback
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> stm32h7xx_hal_uart.o(i.UART_Start_Receive_DMA)
 </UL>
@@ -1962,9 +1962,9 @@ Local Symbols
 <P><STRONG><a name="[ff]"></a>[local to stm32h7xx_hal_uart_c]::UART_EndRxTransfer(__UART_HandleTypeDef*)</STRONG> (Thumb, 78 bytes, Stack size 8 bytes, stm32h7xx_hal_uart.o(i._ZN42_INTERNAL_20_stm32h7xx_hal_uart_c_574fddf518UART_EndRxTransferEP20__UART_HandleTypeDef))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = [local to stm32h7xx_hal_uart_c]::UART_EndRxTransfer(__UART_HandleTypeDef*)
 </UL>
-<BR>[Called By]<UL><LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_IRQHandler
+<BR>[Called By]<UL><LI><a href="#[12d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_WaitOnFlagUntilTimeout
+<LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_IRQHandler
 <LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;[local to stm32h7xx_hal_uart_c]::UART_DMAError(__DMA_HandleTypeDef*)
-<LI><a href="#[12d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_WaitOnFlagUntilTimeout
 </UL>
 
 <P><STRONG><a name="[135]"></a>[local to stm32h7xx_hal_uart_c]::UART_EndTxTransfer(__UART_HandleTypeDef*)</STRONG> (Thumb, 46 bytes, Stack size 0 bytes, stm32h7xx_hal_uart.o(i._ZN42_INTERNAL_20_stm32h7xx_hal_uart_c_574fddf518UART_EndTxTransferEP20__UART_HandleTypeDef))

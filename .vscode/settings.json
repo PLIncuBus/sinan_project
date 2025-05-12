@@ -3,6 +3,7 @@
         "imu.h": "c",
         "main.h": "c",
         "vofa.h": "c",
-        "uwb.h": "c"
+        "uwb.h": "c",
+        "arm_math.h": "c"
     }
 }
