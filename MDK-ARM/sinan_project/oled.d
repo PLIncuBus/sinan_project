@@ -44,9 +44,9 @@ sinan_project\oled.o: ../Core/Inc/main.h
 sinan_project\oled.o: ../Core/Inc/i2c.h
 sinan_project\oled.o: ../Core/Inc/spi.h
 sinan_project\oled.o: ../Core/Inc/usart.h
-sinan_project\oled.o: ..\User\3-HDL(Hardwware Driver Layer)\inc\imu.h
 sinan_project\oled.o: D:\Keil5\ARM\ARMCC\Bin\..\include\string.h
 sinan_project\oled.o: ..\User\1-APL(Application Layer)\inc\INS.h
+sinan_project\oled.o: ..\User\3-HDL(Hardwware Driver Layer)\inc\imu.h
 sinan_project\oled.o: ..\User\3-HDL(Hardwware Driver Layer)\inc\OLED.h
 sinan_project\oled.o: D:\Keil5\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\arm_math.h
 sinan_project\oled.o: D:\Keil5\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\arm_math_types.h
@@ -72,7 +72,7 @@ sinan_project\oled.o: D:\Keil5\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/filtering_f
 sinan_project\oled.o: D:\Keil5\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/quaternion_math_functions.h
 sinan_project\oled.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
 sinan_project\oled.o: ..\User\1-APL(Application Layer)\inc\Callback_Uart.h
-sinan_project\oled.o: ..\User\1-APL(Application Layer)\inc\UWB.h
+sinan_project\oled.o: ..\User\3-HDL(Hardwware Driver Layer)\inc\UWB.h
 sinan_project\oled.o: ..\User\2-MWL(Middleware Layer)\inc\CRC8_CRC16.h
 sinan_project\oled.o: ..\User\1-APL(Application Layer)\inc\VOFA.h
-sinan_project\oled.o: ..\User\3-HDL(Hardwware Driver Layer)\inc\OLED_Font.h
+sinan_project\oled.o: ..\User\2-MWL(Middleware Layer)\inc\OLED_Font.h

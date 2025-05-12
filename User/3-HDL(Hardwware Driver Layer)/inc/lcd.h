@@ -1,20 +1,29 @@
+/*
+ * @作者: PLIncuBus
+ * @日期: 
+ * @最后编者: 
+ * @最后编辑时间: 
+ * @函数名称: 
+ * @函数说明: 
+ * @函数参数: 
+ * @参数返回: 
+ * @备注: 
+ */
+/********************************************************************************
+    * 文件名称 ：lcd.c
+    * 作     者：LiBaifeng，13104312598（微信同）
+    * 版     本：V1.0
+    * 编写日期 ：2021-8-9
+    * 功     能：LCD屏幕驱动
+*********************************************************************************
+    * 说    明 ：本例程配套基于STM32F072的多功能掌中仪器使用
+    *
+    * 电子森林：https://www.eetree.cn/project/detail/421/
+*********************************************************************************/
 #ifndef __LCD_H
 #define __LCD_H
+#include "stm32h7xx_hal.h"
 
-#include "main.h"
-
-
-// 使能和失能背光
-#define LCD_PWR_SET() 		do{ HAL_GPIO_WritePin(GPIOD,LCD_PWR_Pin,GPIO_PIN_SET); }while(0)
-#define LCD_PWR_RESET()		do{ HAL_GPIO_WritePin(GPIOD,LCD_PWR_Pin,GPIO_PIN_RESET); }while(0)
-
-// 复位设置
-#define LCD_RES_SET()     do{ HAL_GPIO_WritePin(GPIOD,LCD_RST_Pin,GPIO_PIN_SET); }while(0)
-#define LCD_RES_RESET()		do{ HAL_GPIO_WritePin(GPIOD,LCD_RST_Pin,GPIO_PIN_RESET); }while(0)
-
-//控制指令/数据指令设置
-#define LCD_WR_CMD()			do{ HAL_GPIO_WritePin(LCD_DC_GPIO_Port,LCD_DC_Pin,GPIO_PIN_RESET); }while(0)
-#define LCD_WR_DATA()			do{ HAL_GPIO_WritePin(LCD_DC_GPIO_Port,LCD_DC_Pin,GPIO_PIN_SET); }while(0)
 
 
 
@@ -22,8 +31,8 @@ extern uint16_t	POINT_COLOR;		//Default brush color
 extern uint16_t	BACK_COLOR;		//Default background color
 
 //Width and height definitions of LCD
-#define LCD_Width 	240
-#define LCD_Height 	240
+#define LCD_Width 	320
+#define LCD_Height 	172
 
 //Brush color
 #define WHITE         	 0xFFFF
@@ -48,6 +57,18 @@ extern uint16_t	BACK_COLOR;		//Default background color
 #define LGRAYBLUE        0XA651 //浅灰蓝色(中间层颜色)
 #define LBBLUE           0X2B12 //浅棕蓝色(选择条目的反色)
 
+
+
+/*
+	
+	LCD_RST:	PD4
+	LCD_DC:		PB4	
+    LCD_PWR:    PD3
+*/
+
+#define	LCD_RST(n)		(n?HAL_GPIO_WritePin(GPIOD,GPIO_PIN_4,GPIO_PIN_SET):HAL_GPIO_WritePin(GPIOD,GPIO_PIN_4,GPIO_PIN_RESET))
+#define	LCD_DC(n)		(n?HAL_GPIO_WritePin(GPIOB,GPIO_PIN_4,GPIO_PIN_SET):HAL_GPIO_WritePin(GPIOB,GPIO_PIN_4,GPIO_PIN_RESET))
+#define LCD_PWR(n)      (n?HAL_GPIO_WritePin(GPIOD,GPIO_PIN_3,GPIO_PIN_SET):HAL_GPIO_WritePin(GPIOD,GPIO_PIN_3,GPIO_PIN_RESET))
 
 
 void LCD_Init(void);																	//Init
@@ -76,6 +97,5 @@ void LCD_ShowMenuDC(void);
 void LCD_ShowMenuFG(void);
 
 #endif
-
 
 

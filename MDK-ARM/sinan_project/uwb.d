@@ -1,5 +1,5 @@
-sinan_project\uwb.o: ..\User\1-APL(Application Layer)\src\UWB.c
-sinan_project\uwb.o: ..\User\1-APL(Application Layer)\inc\UWB.h
+sinan_project\uwb.o: ..\User\3-HDL(Hardwware Driver Layer)\src\UWB.c
+sinan_project\uwb.o: ..\User\3-HDL(Hardwware Driver Layer)\inc\UWB.h
 sinan_project\uwb.o: ../Core/Inc/main.h
 sinan_project\uwb.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h
 sinan_project\uwb.o: ../Core/Inc/stm32h7xx_hal_conf.h
@@ -44,9 +44,9 @@ sinan_project\uwb.o: ../Core/Inc/main.h
 sinan_project\uwb.o: ../Core/Inc/i2c.h
 sinan_project\uwb.o: ../Core/Inc/spi.h
 sinan_project\uwb.o: ../Core/Inc/usart.h
-sinan_project\uwb.o: ..\User\3-HDL(Hardwware Driver Layer)\inc\imu.h
 sinan_project\uwb.o: D:\Keil5\ARM\ARMCC\Bin\..\include\string.h
 sinan_project\uwb.o: ..\User\1-APL(Application Layer)\inc\INS.h
+sinan_project\uwb.o: ..\User\3-HDL(Hardwware Driver Layer)\inc\imu.h
 sinan_project\uwb.o: ..\User\3-HDL(Hardwware Driver Layer)\inc\OLED.h
 sinan_project\uwb.o: D:\Keil5\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\arm_math.h
 sinan_project\uwb.o: D:\Keil5\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\arm_math_types.h
@@ -72,6 +72,6 @@ sinan_project\uwb.o: D:\Keil5\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/filtering_fu
 sinan_project\uwb.o: D:\Keil5\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp/quaternion_math_functions.h
 sinan_project\uwb.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
 sinan_project\uwb.o: ..\User\1-APL(Application Layer)\inc\Callback_Uart.h
-sinan_project\uwb.o: ..\User\1-APL(Application Layer)\inc\UWB.h
+sinan_project\uwb.o: ..\User\3-HDL(Hardwware Driver Layer)\inc\UWB.h
 sinan_project\uwb.o: ..\User\1-APL(Application Layer)\inc\VOFA.h
 sinan_project\uwb.o: ..\User\2-MWL(Middleware Layer)\inc\CRC8_CRC16.h

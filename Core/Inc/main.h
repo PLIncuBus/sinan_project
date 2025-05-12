@@ -35,7 +35,6 @@ extern "C" {
 #include "i2c.h"
 #include "spi.h"
 #include "usart.h"
-#include "imu.h"
 #include "string.h"
 #include "INS.h"
 #include "imu.h"

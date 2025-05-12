@@ -1104,29 +1104,9 @@
               <FilePath>..\User\1-APL(Application Layer)\inc\Callback_Uart.h</FilePath>
             </File>
             <File>
-              <FileName>UWB.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\User\1-APL(Application Layer)\inc\UWB.h</FilePath>
-            </File>
-            <File>
               <FileName>Callback_Uart.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\User\1-APL(Application Layer)\src\Callback_Uart.c</FilePath>
-            </File>
-            <File>
-              <FileName>UWB.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\User\1-APL(Application Layer)\src\UWB.c</FilePath>
-            </File>
-            <File>
-              <FileName>RTK.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\User\1-APL(Application Layer)\src\RTK.c</FilePath>
-            </File>
-            <File>
-              <FileName>RTK.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\User\1-APL(Application Layer)\inc\RTK.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -1163,6 +1143,26 @@
               <FileType>1</FileType>
               <FilePath>..\User\2-MWL(Middleware Layer)\src\coordinate_transformation.c</FilePath>
             </File>
+            <File>
+              <FileName>font.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\User\2-MWL(Middleware Layer)\inc\font.h</FilePath>
+            </File>
+            <File>
+              <FileName>HzLib.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\User\2-MWL(Middleware Layer)\inc\HzLib.h</FilePath>
+            </File>
+            <File>
+              <FileName>OLED_Font.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\User\2-MWL(Middleware Layer)\inc\OLED_Font.h</FilePath>
+            </File>
+            <File>
+              <FileName>HzLib.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\2-MWL(Middleware Layer)\src\HzLib.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -1172,11 +1172,6 @@
               <FileName>OLED.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\User\3-HDL(Hardwware Driver Layer)\inc\OLED.h</FilePath>
-            </File>
-            <File>
-              <FileName>OLED_Font.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\User\3-HDL(Hardwware Driver Layer)\inc\OLED_Font.h</FilePath>
             </File>
             <File>
               <FileName>OLED.c</FileName>
@@ -1192,6 +1187,36 @@
               <FileName>imu.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\User\3-HDL(Hardwware Driver Layer)\src\imu.c</FilePath>
+            </File>
+            <File>
+              <FileName>lcd.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\User\3-HDL(Hardwware Driver Layer)\inc\lcd.h</FilePath>
+            </File>
+            <File>
+              <FileName>RTK.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\User\3-HDL(Hardwware Driver Layer)\inc\RTK.h</FilePath>
+            </File>
+            <File>
+              <FileName>UWB.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\User\3-HDL(Hardwware Driver Layer)\inc\UWB.h</FilePath>
+            </File>
+            <File>
+              <FileName>lcd.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\3-HDL(Hardwware Driver Layer)\src\lcd.c</FilePath>
+            </File>
+            <File>
+              <FileName>RTK.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\3-HDL(Hardwware Driver Layer)\src\RTK.c</FilePath>
+            </File>
+            <File>
+              <FileName>UWB.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\3-HDL(Hardwware Driver Layer)\src\UWB.c</FilePath>
             </File>
           </Files>
         </Group>
